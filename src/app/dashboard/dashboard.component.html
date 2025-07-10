@@ -1,0 +1,24 @@
+<!-- dashboard.component.html -->
+<div class="container py-4">
+  <h2 class="text-center mb-4">📊 Métricas de Tareas</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h5>Total</h5>
+        <p class="fs-4">{{ metrics.total }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h5>Completadas</h5>
+        <p class="fs-4 text-success">{{ metrics.completed }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h5>Pendientes</h5>
+        <p class="fs-4 text-warning">{{ metrics.pending }}</p>
+      </div>
+    </div>
+  </div>
+</div>
