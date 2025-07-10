@@ -1,27 +1,33 @@
-# Onoff
+# Onoff Test!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+Buen día querido usuario, a continuación encontraras las pautas necesarias para que puedas correr este proyecto.
+  
+## Descripción del Proyecto
+Este proyecto fue creado con el fin de poder administrar un todo list de actividades para la prueba de `OnoFF`.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🧱 Arquitectura General
 
-## Code scaffolding
+Para el proyecto de la prueba se oriento mediante el patron  `Cliente-Servidor` con separación de responsabilidades. Esta separación mejora la mantenibilidad, escalabilidad y reutilización del código, debido a que es un proyecto pequeño no se requirio realizar un arquitectura mas robusta para soportar la funcionalidad.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Tecnologías utilizadas
 
-## Build
+- Angular 17,
+- Jasmine/Karma
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Configuración del entorno
 
-## Running unit tests
+- Angular 17
+- Requisitos de instalación (Node.js, .NET SDK)
+- ### Correr el proyecto 
+	- una vez descargado el proyecto correr el comando ng serve -o mediante una consola o el ide de su preferencia. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🔐 Autenticación
+Al momento de iniciar sesión se pueden utilizar las siguientes credenciales
+- Usuario: ing.dareyes@hotmail.com
+- Contraseña: C0dely0c0*.*17
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🧪 Pruebas
+Si se requiere correr las pruebas del proyecto se recomienda mediante linea de comando o mediante el visor de pruebas de visual studio code
+- Jasmine + Karma para componentes (LoginComponent) y servicios
+- Cobertura de código (ng test --code-coverage)
