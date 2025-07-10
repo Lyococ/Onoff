@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 
 
 export class LoginComponent {
+  errorMessage: any;
   constructor(private authService: AuthService, private router: Router) {}
 
   email: string = '';
@@ -23,7 +24,7 @@ export class LoginComponent {
         this.authService.setToken(res.token);
         this.router.navigate(['/todo']);
       },
-      error: () => this.error = 'Credenciales inválidas'
+      error: err => this.errorMessage = err.message,
     });
   }
 }
